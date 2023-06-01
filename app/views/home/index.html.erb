@@ -1,0 +1,39 @@
+<% if logged_in? && current_user && current_user.employee_role? %>
+
+
+<h4>Upcoming Shifts at Cafe23</h4>
+<% if @upcoming_shifts.nil? %>
+  <h4>There are no upcoming shifts in the system at this time.</h4>
+<% else %>
+
+  <table class="striped highlight">
+    <thead>
+      <th>Date</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th class="align_center">Options</th>
+    </thead>
+    <% for shift in @upcoming_shifts %>
+      <tr>
+        <td><%= link_to "#{shift.date}", shift_path(shift) %></td>
+        <td><%= humanize_time(shift.start_time) %></td>
+        <td><%= humanize_time(shift.end_time) %></td>
+        <td class="align_center">
+          <%= link_to edit_shift_path(shift) do %>
+              <i class="material-icons">edit</i>
+          <% end %>
+          &nbsp;&nbsp;&nbsp;&nbsp; 
+          <%= link_to(shift_path(shift), method: :delete, data: { confirm: 'Are you sure you wish to delete this information?' }) do %>
+              <i class="material-icons">delete</i>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+  <br />
+<% end %>
+<p>&nbsp;</p>
+
+
+
+<% end %>

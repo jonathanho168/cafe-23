@@ -1,0 +1,140 @@
+Started with run options --seed 61697
+
+ShiftsControllerTest
+[32m  test_should_not_be_able_to_clock_out_for_a_shift_tomorrow      [0m[32m PASS[0m (0.54s)
+[32m  test_should_update_shift                                       [0m[32m PASS[0m (0.02s)
+[32m  test_should_not_destroy_shift_when_inappropriate               [0m[32m PASS[0m (0.02s)
+[32m  test_should_destroy_shift_when_appropriate                     [0m[32m PASS[0m (0.03s)
+[32m  test_should_get_index                                          [0m[32m PASS[0m (0.05s)
+[32m  test_should_go_to_the_time_clock_view_if_current_user_has_a_shift_today[0m[32m PASS[0m (0.04s)
+[32m  test_should_not_go_to_the_time_clock_view_if_current_user_doesn't_have_a_shift_today[0m[32m PASS[0m (0.04s)
+[32m  test_should_be_able_to_clock_in_for_a_shift_today              [0m[32m PASS[0m (0.04s)
+[32m  test_should_create_shift                                       [0m[32m PASS[0m (0.02s)
+[32m  test_should_show_shift                                         [0m[32m PASS[0m (0.01s)
+[32m  test_should_not_be_able_to_clock_in_for_a_shift_tomorrow       [0m[32m PASS[0m (0.03s)
+[32m  test_should_be_able_to_clock_out_for_a_shift_today             [0m[32m PASS[0m (0.04s)
+[32m  test_should_get_edit                                           [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_new                                            [0m[32m PASS[0m (0.02s)
+
+ShiftJobsControllerTest
+[32m  test_should_not_have_generic_routes_(i.e.,_not_using_resources_:shift_jobs)[0m[32m PASS[0m (0.02s)
+[32m  test_should_destroy_shift_job                                  [0m[32m PASS[0m (0.02s)
+[32m  test_should_create_shift_job                                   [0m[32m PASS[0m (0.02s)
+[32m  test_should_get_new                                            [0m[32m PASS[0m (0.01s)
+
+PayGradesControllerTest
+[31m  test_should_get_show                                           [0m[31m FAIL[0m (0.01s)
+Minitest::Assertion:         Expected nil to not be nil.
+        test/controllers/pay_grades_controller_test.rb:17:in `block in <class:PayGradesControllerTest>'
+
+[32m  test_should_get_edit                                           [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_index                                          [0m[32m PASS[0m (0.01s)
+[32m  test_should_be_no_destroy_action_for_pay_grade                 [0m[32m PASS[0m (0.01s)
+[32m  test_should_create_pay_grade                                   [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_new                                            [0m[32m PASS[0m (0.01s)
+[32m  test_should_update_pay_grade                                   [0m[32m PASS[0m (0.01s)
+
+JobsControllerTest
+[32m  test_should_get_new                                            [0m[32m PASS[0m (0.02s)
+[32m  test_should_get_edit                                           [0m[32m PASS[0m (0.01s)
+[32m  test_should_destroy_job_when_appropriate                       [0m[32m PASS[0m (0.01s)
+[32m  test_should_update_job                                         [0m[32m PASS[0m (0.01s)
+[32m  test_should_be_no_show_action_for_job                          [0m[32m PASS[0m (0.01s)
+[32m  test_should_create_job                                         [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_index                                          [0m[32m PASS[0m (0.01s)
+[32m  test_should_not_destroy_job_when_in_appropriate                [0m[32m PASS[0m (0.02s)
+
+HomeControllerTest
+[32m  test_should_get_privacy                                        [0m[32m PASS[0m (0.00s)
+[32m  test_should_get_contact                                        [0m[32m PASS[0m (0.00s)
+[32m  test_should_get_about                                          [0m[32m PASS[0m (0.00s)
+[32m  test_should_get_index                                          [0m[32m PASS[0m (0.00s)
+
+ApplicationControllerTest
+[32m  test_should_redirect_to_home_path_on_404_errors                [0m[32m PASS[0m (0.01s)
+[32m  test_should_have_a_logged_in?_method                           [0m[32m PASS[0m (0.01s)
+[32m  test_should_create_a_current_user                              [0m[32m PASS[0m (0.01s)
+[32m  test_should_have_a_check_login_method                          [0m[32m PASS[0m (0.00s)
+[32m  test_should_redirect_to_home_path_on_authorization_failure     [0m[32m PASS[0m (0.03s)
+
+AssignmentsControllerTest
+[32m  test_should_get_index                                          [0m[32m PASS[0m (0.02s)
+[32m  test_should_update_assignment                                  [0m[32m PASS[0m (0.02s)
+[32m  test_should_get_new                                            [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_edit                                           [0m[32m PASS[0m (0.01s)
+[32m  test_should_not_destroy_assignment_when_in_appropriate         [0m[32m PASS[0m (0.02s)
+[32m  test_should_create_assignment                                  [0m[32m PASS[0m (0.02s)
+[32m  test_should_destroy_assignment_when_appropriate                [0m[32m PASS[0m (0.02s)
+[32m  test_should_get_index_for_employee                             [0m[32m PASS[0m (0.03s)
+[32m  test_should_get_show                                           [0m[32m PASS[0m (0.01s)
+
+PayrollsControllerTest
+[31m  test_should_get_store_form_path_for_manager                    [0m[31m FAIL[0m (0.06s)
+Minitest::Assertion:         Expected response to be a <2XX: success>, but was a <302: Found> redirect to <http://www.example.com/home>
+        Response body: <html><body>You are being <a href="http://www.example.com/home">redirected</a>.</body></html>
+        test/controllers/payrolls_controller_test.rb:19:in `block in <class:PayrollsControllerTest>'
+
+[32m  test_should_get_employee_form_path_for_admin                   [0m[32m PASS[0m (0.05s)
+[31m  test_should_get_an_employee_payroll_report                     [0m[31mERROR[0m (0.07s)
+Minitest::UnexpectedError:         NoMethodError: undefined method `id' for [#<Employee id: 3, first_name: "Ralph", last_name: "Wilson", ssn: "116849840", date_of_birth: "2007-04-10", phone: "1732919710", role: "employee", active: true, username: "ralph", password_digest: "$2a$04$iNj1mIRYn5/kdHXVIPIAj.WnlFlx1XRZ6VPpbcpySXZ...">]:Array
+        
+          scope :for_employee,  ->(employee) { joins(:assignment, :employee).where("assignments.employee_id = ?", employee.id) }
+                                                                                                                          ^^^
+            app/models/shift.rb:22:in `block in <class:Shift>'
+            app/services/payroll_calculator.rb:29:in `create_payroll_record_for'
+            app/controllers/payrolls_controller.rb:18:in `employee_payroll'
+            test/controllers/payrolls_controller_test.rb:39:in `block in <class:PayrollsControllerTest>'
+
+[32m  test_should_not_have_generic_routes_(e.g.,_no_index_route)     [0m[32m PASS[0m (0.05s)
+[31m  test_should_get_a_store_payroll_report_for_admin               [0m[31mERROR[0m (0.05s)
+Minitest::UnexpectedError:         NoMethodError: undefined method `id' for nil:NilClass
+        
+          scope :for_store,     ->(store) { joins(:assignment, :store).where("assignments.store_id = ?", store.id) }
+                                                                                                              ^^^
+            app/models/shift.rb:21:in `block in <class:Shift>'
+            app/services/payroll_calculator.rb:18:in `create_payrolls_for'
+            app/controllers/payrolls_controller.rb:29:in `store_payroll'
+            test/controllers/payrolls_controller_test.rb:47:in `block in <class:PayrollsControllerTest>'
+
+[31m  test_should_get_a_store_payroll_report_for_manager             [0m[31m FAIL[0m (0.06s)
+Minitest::Assertion:         Expected response to be a <2XX: success>, but was a <302: Found> redirect to <http://www.example.com/home>
+        Response body: <html><body>You are being <a href="http://www.example.com/home">redirected</a>.</body></html>
+        test/controllers/payrolls_controller_test.rb:56:in `block in <class:PayrollsControllerTest>'
+
+[32m  test_should_get_store_form_path_for_admin                      [0m[32m PASS[0m (0.05s)
+[32m  test_should_not_get_employee_form_path_for_manager             [0m[32m PASS[0m (0.05s)
+
+EmployeesControllerTest
+[32m  test_should_get_index                                          [0m[32m PASS[0m (0.01s)
+[32m  test_should_update_employee                                    [0m[32m PASS[0m (0.02s)
+[32m  test_should_get_new                                            [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_edit                                           [0m[32m PASS[0m (0.01s)
+[32m  test_should_show_employee                                      [0m[32m PASS[0m (0.01s)
+[32m  test_should_create_employee                                    [0m[32m PASS[0m (0.02s)
+[32m  test_should_destroy_employee_when_appropriate                  [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_index_for_manager                              [0m[32m PASS[0m (0.03s)
+[32m  test_should_not_destroy_employee_when_inappropriate            [0m[32m PASS[0m (0.02s)
+
+StoresControllerTest
+[32m  test_should_show_store                                         [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_edit                                           [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_index                                          [0m[32m PASS[0m (0.01s)
+[32m  test_should_be_no_destroy_action_for_store                     [0m[32m PASS[0m (0.01s)
+[32m  test_should_create_store                                       [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_new                                            [0m[32m PASS[0m (0.01s)
+[32m  test_should_update_store                                       [0m[32m PASS[0m (0.01s)
+
+SessionsControllerTest
+[32m  test_should_not_create_session_without_proper_creds            [0m[32m PASS[0m (0.00s)
+[32m  test_should_destroy_session                                    [0m[32m PASS[0m (0.01s)
+[32m  test_should_create_session_with_proper_creds                   [0m[32m PASS[0m (0.01s)
+[32m  test_should_get_new                                            [0m[32m PASS[0m (0.00s)
+
+PayGradeRatesControllerTest
+[32m  test_should_get_new                                            [0m[32m PASS[0m (0.01s)
+[32m  test_should_create_new_pay_grade_rate                          [0m[32m PASS[0m (0.01s)
+[32m  test_should_not_have_generic_routes_(i.e.,_not_using_resources_:pay_grade_routes)[0m[32m PASS[0m (0.01s)
+
+Finished in 2.09159s
+82 tests, 181 assertions, [31m3 failures, 2 errors, [0m[33m0 skips[0m
+Coverage report generated for Unit Tests to /Users/jonathanho/Documents/GitHub/cafe23-phase-4-jonathanho168/coverage. 592 / 683 LOC (86.68%) covered.

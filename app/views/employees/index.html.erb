@@ -1,0 +1,72 @@
+<% if @active_employees.empty? %>
+  <h4>There are no employees in the system at this time.</h4>
+<% else %>
+<h4>Active Employees at Cafe23</h4>
+  <table class="striped highlight">
+    <thead>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Current Assignment</th>
+      <th class="align_center">Options</th>
+    </thead>
+    <% for employee in @active_employees %>
+      <tr>
+        <td><%= link_to "#{employee.last_name}, #{employee.first_name}", employee_path(employee) %></td>
+        <td><%= number_to_phone employee.phone %></td>
+        <% if employee.current_assignment.nil?%>
+          <td>n/a</td>
+        <% else %>
+          <td><%= employee.current_assignment.store.name%> </td>
+        <% end%>
+        <td class="align_center">
+          <%= link_to edit_employee_path(employee) do %>
+              <i class="material-icons">edit</i>
+          <% end %>
+          &nbsp;&nbsp;&nbsp;&nbsp; 
+          <%= link_to(employee_path(employee), method: :delete, data: { confirm: 'Are you sure you wish to delete this information?' }) do %>
+              <i class="material-icons">delete</i>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+  <br />
+<% end %>
+<p>&nbsp;</p>
+
+
+<% if @inactive_employees.empty? %>
+  <h4>There are no inactive employees in the system at this time.</h4>
+<% else %>
+  <h4>Inactive Employees at Cafe23 </h4>
+  <table class="striped highlight">
+    <thead>
+      <th>Name</th>
+      <th>Phone</th>
+      <th class="align_center">Options</th>
+    </thead>
+    <% for employee in @inactive_employees %>
+      <tr>
+        <td><%= link_to "#{employee.last_name}, #{employee.first_name}", employee_path(employee) %></td>
+        
+        <td><%= number_to_phone employee.phone %></td>
+        <td class="align_center">
+          <%= link_to edit_employee_path(employee) do %>
+              <i class="material-icons">edit</i>
+          <% end %>
+          &nbsp;&nbsp;&nbsp;&nbsp; 
+          <%= link_to(employee_path(employee), method: :delete, data: { confirm: 'Are you sure you wish to delete this information?' }) do %>
+              <i class="material-icons">delete</i>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+  <br />
+<% end %>
+<p>&nbsp;</p>
+
+
+<p><strong>
+<%= link_to "Add a New Employee", new_employee_path, class: 'waves-effect waves-light btn' %> 
+</strong></p>
